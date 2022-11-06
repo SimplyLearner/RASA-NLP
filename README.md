@@ -18,4 +18,7 @@ conda install websocket-client
 pip install spacy
 python3 -m spacy download en_core_web_md
 rasa init
+
+# Perform initial training
+# Speak to chatbot
 ```
