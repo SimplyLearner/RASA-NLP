@@ -13,4 +13,5 @@ pip install rasa
 
 conda install python-crfsuite
 conda install grpcio
+conda install websocket-client
 ```
