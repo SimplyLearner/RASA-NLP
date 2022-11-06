@@ -11,4 +11,6 @@ conda update -n base -c defaults conda
 conda activate rasa-chatbot
 pip install rasa
 
+conda install python-crfsuite
+conda install grpcio
 ```
