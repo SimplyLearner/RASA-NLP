@@ -7,7 +7,6 @@ https://www.anaconda.com/products/distribution
 ```
 pip3 install -U pip # upgrade the pip
 conda create --name rasa-chatbot python=3.9
-conda update -n base -c defaults conda
 conda activate rasa-chatbot
 pip install rasa
 
