@@ -21,4 +21,6 @@ rasa init
 
 # Perform initial training
 # Speak to chatbot
+
+# Install Docker Desktop
 ```
