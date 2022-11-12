@@ -92,6 +92,8 @@ nlu:
 
 - intent: get_name
   examples: |
-    - My name is Nachiketh
-    - My Name is Rajat
-    - My name is Deeksha
+    - My name is [Nachiketh](PERSON)
+    - My Name is [Rajat](PERSON)
+    - My name is [Deeksha](PERSON)
+    - I'm [prerna](PERSON)
+    - I am [Sampreeti](PERSON)

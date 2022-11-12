@@ -10,6 +10,13 @@ intents:
   - bot_challenge
   - get_name
 
+slots:
+   PERSON:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: PERSON
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -31,7 +38,8 @@ responses:
   - text: "I am a bot, powered by Rasa."
   
   utter_meet_you:
-  - text: "Nice to meet you"
+  - text: Nice to meet you {PERSON}
+  - text: Very nice name {PERSON}, nice to meet you
 
 session_config:
   session_expiration_time: 60
