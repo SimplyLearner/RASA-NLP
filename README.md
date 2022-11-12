@@ -22,4 +22,10 @@ rasa init
 # Speak to chatbot
 
 # Install Docker Desktop
+
+rasa train 
+rasa shell
+rasa visualize
+rasa interactive
+rasa test
 ```
