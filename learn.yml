@@ -1,0 +1,32 @@
+--- # starts with three dashes - indicate the start of new YAML document
+
+course: "Natural Language Processing"
+duration: 5  # integer
+rating: 4.9  # float
+inprogress: true # boolean
+next: 'sequence learning'
+prerequisites:
+  - python
+  - ML
+  - DL
+
+# Strings - double quotes, single quotes or no quotes
+
+prerequisite: [python, ML, DL]
+
+edureka:
+  coursename: PGP Program
+  duration: 9
+  eligibility:
+    degree: yes
+    timecommitment: 10
+  alleligible: false
+
+review: The course was awazing, i love it.
+
+review: |
+  the course was amazing
+  I love it
+
+
+
