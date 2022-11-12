@@ -17,25 +17,28 @@ slots:
       - type: from_entity
         entity: PERSON
 
+entities:
+  - PERSON
+
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! {PERSON} How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Here is something to cheer you up {PERSON}:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Did that help you {PERSON} ?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Great, carry on {PERSON}!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye {PERSON}"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot {PERSON}, powered by Rasa. "
   
   utter_meet_you:
   - text: Nice to meet you {PERSON}
