@@ -33,3 +33,19 @@ stories:
   steps:
   - intent: get_name
   - action: utter_meet_you
+
+- story : bot action
+  steps:
+  - intent: test_hello
+  - action: action_hello_world
+
+- story: news path
+  steps:
+    - intent: news
+    - action: utter_news
+    - action: action_get_news
+
+- story: who invented
+  steps:
+    - intent: who_invented
+    - action: utter_creator

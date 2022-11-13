@@ -97,3 +97,24 @@ nlu:
     - My name is [Deeksha](PERSON)
     - I'm [prerna](PERSON)
     - I am [Sampreeti](PERSON)
+
+- intent: test_hello
+  examples: |
+    - Computer Program
+    - bot program
+
+- intent: news
+  examples: |
+    - Share some news around the [world](category)
+    - whats the latest trend on [fashion](category)
+    - tell me some news on [business](category)
+    - what is cooking in [food](category)
+    - [movies](category)
+    - share some latest news in [technology](category)
+    - share the latest information about [sports](category)
+  
+- intent: who_invented
+  examples: |
+    - Hey Chatbot who invented you?
+    - Who is your creator ?
+    - Hey bot who is your owners ?

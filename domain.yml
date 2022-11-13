@@ -9,6 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
   - get_name
+  - test_hello
+  - news
+  - who_invented
 
 slots:
    PERSON:
@@ -17,8 +20,15 @@ slots:
       - type: from_entity
         entity: PERSON
 
+   category:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: category
+
 entities:
   - PERSON
+  - category
 
 responses:
   utter_greet:
@@ -43,6 +53,18 @@ responses:
   utter_meet_you:
   - text: Nice to meet you {PERSON}
   - text: Very nice name {PERSON}, nice to meet you
+
+  utter_news:
+  - text: I can help you with the top 5 news of the {category}
+  - text: Surely, I will help you. The Top 5 news of the {category}
+
+  utter_creator:
+  - text: My creator is the Edureka PGP batch
+  - text: My creator is a Data Scientist
+
+actions:
+  - action_hello_world
+  - action_get_news
 
 session_config:
   session_expiration_time: 60
